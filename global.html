@@ -1,0 +1,382 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@2.9.3/dist/Chart.min.js"></script>
+    <script src="https://kit.fontawesome.com/09b615bd55.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style.css">
+    <title>AskMe</title>
+</head>
+
+<body>
+    <nav class="navbar" id="main-nav">
+        <h1 class="logo"><span class="text-primary"> <i class="fas fa-user-md"></i>
+            Ask</span> Me</h1>
+        <ul>
+            <li><a class="current" href="index.html">Dashboard</a></li>
+            <li><a href="global.html">India</a></li>
+            <li><a href="table.html">World</a></li>
+            <li><a href="table.html">Updates</a></li>
+
+
+        </ul>
+        </div>
+    </nav>
+
+    <!-- <h1>Hi This Is The Information of Corona Virus</h1> -->
+    <div id="displaycanvas">
+        <div id="chart1">
+            <div>
+                <h1 id="headingcases">Total Cases</h1>
+                <p id="totalindia">0</p>
+            </div>
+            <div style="overflow-x: auto;"><canvas id="myChart" width="400px" height="400px">
+                
+            </canvas></div>
+        </div>
+        <div id="chart2">
+            <div>
+                <h1 id="headingcases">Total Deaths</h1>
+                <p id="totaldeaths">0</p>
+            </div>
+            <div style="overflow-x: auto;">
+
+                <canvas id="myChart2" width="400px" height="400px"> </div>
+                </canvas>
+            </div>
+        </div>
+        <div id="love" style="overflow: scroll;">
+            <table>
+                <thead>
+                    <tr>
+                        <th>State</th>
+                        <th>Total Cases</th>
+                        <th>Recoverd</th>
+
+                        <th>Active</th>
+                        <th>Total Deaths</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td id="aa01">0</td>
+                        <td id="aa02">0</td>
+                        <td id="aa03" style="background-color: rgb(61, 209, 61);color: white;">0</td>
+                        <td id="aa04">0</td>
+                        <td id="aa05" style="background-color: red;color: white;">0</td>
+                    </tr>
+
+                    <tr>
+                        <td id="aa11">0</td>
+                        <td id="aa12">0</td>
+                        <td id="aa13" style="background-color: rgb(61, 209, 61);color: white;">0</td>
+                        <td id="aa14">0</td>
+                        <td id="aa15" style="background-color: red;color: white;">0</td>
+                    </tr>
+
+                    <tr>
+                        <td id="aa21">0</td>
+                        <td id="aa22">0</td>
+                        <td id="aa23" style="background-color: rgb(61, 209, 61);color: white;">0</td>
+                        <td id="aa24">0</td>
+                        <td id="aa25" style="background-color: red;color: white;">0</td>
+                    </tr>
+
+                    <tr>
+                        <td id="aa31">0</td>
+                        <td id="aa32">0</td>
+                        <td id="aa33" style="background-color: rgb(61, 209, 61);color: white;">0</td>
+                        <td id="aa34">0</td>
+                        <td id="aa35" style="background-color: red;color: white;">0</td>
+                    </tr>
+
+                    <tr>
+                        <td id="aa41">0</td>
+                        <td id="aa42">0</td>
+                        <td id="aa43" style="background-color: rgb(61, 209, 61);color: white;">0</td>
+                        <td id="aa44">0</td>
+                        <td id="aa45" style="background-color: red;color: white;">0</td>
+                    </tr>
+
+                    <tr>
+                        <td id="aa51">0</td>
+                        <td id="aa52">0</td>
+                        <td id="aa53" style="background-color: rgb(61, 209, 61);color: white;">0</td>
+                        <td id="aa54">0</td>
+                        <td id="aa55" style="background-color: red;color: white;">0</td>
+                    </tr>
+
+                    <tr>
+                        <td id="aa61">0</td>
+                        <td id="aa62">0</td>
+                        <td id="aa63" style="background-color: rgb(61, 209, 61);color: white;">0</td>
+                        <td id="aa64">0</td>
+                        <td id="aa65" style="background-color: red;color: white;">0</td>
+                    </tr>
+
+                    <tr>
+                        <td id="aa71">0</td>
+                        <td id="aa72">0</td>
+                        <td id="aa73" style="background-color: rgb(61, 209, 61);color: white;">0</td>
+                        <td id="aa74">0</td>
+                        <td id="aa75" style="background-color: red;color: white;">0</td>
+                    </tr>
+
+                    <tr>
+                        <td id="aa81">0</td>
+                        <td id="aa82">0</td>
+                        <td id="aa83" style="background-color: rgb(61, 209, 61);color: white;">0</td>
+                        <td id="aa84">0</td>
+                        <td id="aa85" style="background-color: red;color: white;">0</td>
+                    </tr>
+
+                    <tr>
+                        <td id="aa91">0</td>
+                        <td id="aa92">0</td>
+                        <td id="aa93" style="background-color: rgb(61, 209, 61);color: white;">0</td>
+                        <td id="aa94">0</td>
+                        <td id="aa95" style="background-color: red;color: white;">0</td>
+                    </tr>
+
+                    <tr>
+                        <td id="aa101">0</td>
+                        <td id="aa102">0</td>
+                        <td id="aa103" style="background-color: rgb(61, 209, 61);color: white;">0</td>
+                        <td id="aa104">0</td>
+                        <td id="aa105" style="background-color: red;color: white;">0</td>
+                    </tr>
+
+                    <tr>
+                        <td id="aa111">0</td>
+                        <td id="aa112">0</td>
+                        <td id="aa113" style="background-color: rgb(61, 209, 61);color: white;">0</td>
+                        <td id="aa114">0</td>
+                        <td id="aa115" style="background-color: red;color: white;">0</td>
+                    </tr>
+
+                    <tr>
+                        <td id="aa121">0</td>
+                        <td id="aa122">0</td>
+                        <td id="aa123" style="background-color: rgb(61, 209, 61);color: white;">0</td>
+                        <td id="aa124">0</td>
+                        <td id="aa125" style="background-color: red;color: white;">0</td>
+                    </tr>
+
+                    <tr>
+                        <td id="aa131">0</td>
+                        <td id="aa132">0</td>
+                        <td id="aa133" style="background-color: rgb(61, 209, 61);color: white;">0</td>
+                        <td id="aa134">0</td>
+                        <td id="aa135" style="background-color: red;color: white;">0</td>
+                    </tr>
+
+                    <tr>
+                        <td id="aa141">0</td>
+                        <td id="aa142">0</td>
+                        <td id="aa143" style="background-color: rgb(61, 209, 61);color: white;">0</td>
+                        <td id="aa144">0</td>
+                        <td id="aa145" style="background-color: red;color: white;">0</td>
+                    </tr>
+
+                    <tr>
+                        <td id="aa151">0</td>
+                        <td id="aa152">0</td>
+                        <td id="aa153" style="background-color: rgb(61, 209, 61);color: white;">0</td>
+                        <td id="aa154">0</td>
+                        <td id="aa155" style="background-color: red;color: white;">0</td>
+                    </tr>
+
+                    <tr>
+                        <td id="aa161">0</td>
+                        <td id="aa162">0</td>
+                        <td id="aa163" style="background-color: rgb(61, 209, 61);color: white;">0</td>
+                        <td id="aa164">0</td>
+                        <td id="aa165" style="background-color: red;color: white;">0</td>
+                    </tr>
+
+                    <tr>
+                        <td id="aa171">0</td>
+                        <td id="aa172">0</td>
+                        <td id="aa173" style="background-color: rgb(61, 209, 61);color: white;">0</td>
+                        <td id="aa174">0</td>
+                        <td id="aa175" style="background-color: red;color: white;">0</td>
+                    </tr>
+
+                    <tr>
+                        <td id="aa181">0</td>
+                        <td id="aa182">0</td>
+                        <td id="aa183" style="background-color: rgb(61, 209, 61);color: white;">0</td>
+                        <td id="aa184">0</td>
+                        <td id="aa185" style="background-color: red;color: white;">0</td>
+                    </tr>
+
+                    <tr>
+                        <td id="aa191">0</td>
+                        <td id="aa192">0</td>
+                        <td id="aa193" style="background-color: rgb(61, 209, 61);color: white;">0</td>
+                        <td id="aa194">0</td>
+                        <td id="aa195" style="background-color: red;color: white;">0</td>
+                    </tr>
+
+                    <tr>
+                        <td id="aa201">0</td>
+                        <td id="aa202">0</td>
+                        <td id="aa203" style="background-color: rgb(61, 209, 61);color: white;">0</td>
+                        <td id="aa204">0</td>
+                        <td id="aa205" style="background-color: red;color: white;">0</td>
+                    </tr>
+
+                    <tr>
+                        <td id="aa211">0</td>
+                        <td id="aa212">0</td>
+                        <td id="aa213" style="background-color: rgb(61, 209, 61);color: white;">0</td>
+                        <td id="aa214">0</td>
+                        <td id="aa215" style="background-color: red;color: white;">0</td>
+                    </tr>
+
+                    <tr>
+                        <td id="aa221">0</td>
+                        <td id="aa222">0</td>
+                        <td id="aa223" style="background-color: rgb(61, 209, 61);color: white;">0</td>
+                        <td id="aa224">0</td>
+                        <td id="aa225" style="background-color: red;color: white;">0</td>
+                    </tr>
+
+                    <tr>
+                        <td id="aa231">0</td>
+                        <td id="aa232">0</td>
+                        <td id="aa233" style="background-color: rgb(61, 209, 61);color: white;">0</td>
+                        <td id="aa234">0</td>
+                        <td id="aa235" style="background-color: red;color: white;">0</td>
+                    </tr>
+
+                    <tr>
+                        <td id="aa241">0</td>
+                        <td id="aa242">0</td>
+                        <td id="aa243" style="background-color: rgb(61, 209, 61);color: white;">0</td>
+                        <td id="aa244">0</td>
+                        <td id="aa245" style="background-color: red;color: white;">0</td>
+                    </tr>
+
+                    <tr>
+                        <td id="aa251">0</td>
+                        <td id="aa252">0</td>
+                        <td id="aa253" style="background-color: rgb(61, 209, 61);color: white;">0</td>
+                        <td id="aa254">0</td>
+                        <td id="aa255" style="background-color: red;color: white;">0</td>
+                    </tr>
+
+                    <tr>
+                        <td id="aa261">0</td>
+                        <td id="aa262">0</td>
+                        <td id="aa263" style="background-color: rgb(61, 209, 61);color: white;">0</td>
+                        <td id="aa264">0</td>
+                        <td id="aa265" style="background-color: red;color: white;">0</td>
+                    </tr>
+
+                    <tr>
+                        <td id="aa271">0</td>
+                        <td id="aa272">0</td>
+                        <td id="aa273" style="background-color: rgb(61, 209, 61);color: white;">0</td>
+                        <td id="aa274">0</td>
+                        <td id="aa275" style="background-color: red;color: white;">0</td>
+                    </tr>
+
+                    <tr>
+                        <td id="aa281">0</td>
+                        <td id="aa282">0</td>
+                        <td id="aa283" style="background-color: rgb(61, 209, 61);color: white;">0</td>
+                        <td id="aa284">0</td>
+                        <td id="aa285" style="background-color: red;color: white;">0</td>
+                    </tr>
+
+                    <tr>
+                        <td id="aa291">0</td>
+                        <td id="aa292">0</td>
+                        <td id="aa293" style="background-color: rgb(61, 209, 61);color: white;">0</td>
+                        <td id="aa294">0</td>
+                        <td id="aa295" style="background-color: red;color: white;">0</td>
+                    </tr>
+
+                    <tr>
+                        <td id="aa301">0</td>
+                        <td id="aa302">0</td>
+                        <td id="aa303" style="background-color: rgb(61, 209, 61);color: white;">0</td>
+                        <td id="aa304">0</td>
+                        <td id="aa305" style="background-color: red;color: white;">0</td>
+                    </tr>
+
+                    <tr>
+                        <td id="aa311">0</td>
+                        <td id="aa312">0</td>
+                        <td id="aa313" style="background-color: rgb(61, 209, 61);color: white;">0</td>
+                        <td id="aa314">0</td>
+                        <td id="aa315" style="background-color: red;color: white;">0</td>
+                    </tr>
+
+                    <tr>
+                        <td id="aa321">0</td>
+                        <td id="aa322">0</td>
+                        <td id="aa323" style="background-color: rgb(61, 209, 61);color: white;">0</td>
+                        <td id="aa324">0</td>
+                        <td id="aa325" style="background-color: red;color: white;">0</td>
+                    </tr>
+
+                    <tr>
+                        <td id="aa331">0</td>
+                        <td id="aa332">0</td>
+                        <td id="aa333" style="background-color: rgb(61, 209, 61);color: white;">0</td>
+                        <td id="aa334">0</td>
+                        <td id="aa335" style="background-color: red;color: white;">0</td>
+                    </tr>
+
+                    <tr>
+                        <td id="aa341">0</td>
+                        <td id="aa342">0</td>
+                        <td id="aa343" style="background-color: rgb(61, 209, 61);color: white;">0</td>
+                        <td id="aa344">0</td>
+                        <td id="aa345" style="background-color: red;color: white;">0</td>
+                    </tr>
+
+                    <tr>
+                        <td id="aa351">0</td>
+                        <td id="aa352">0</td>
+                        <td id="aa353" style="background-color: rgb(61, 209, 61);color: white;">0</td>
+                        <td id="aa354">0</td>
+                        <td id="aa355" style="background-color: red;color: white;">0</td>
+                    </tr>
+
+                    <tr>
+                        <td id="aa361">0</td>
+                        <td id="aa362">0</td>
+                        <td id="aa363" style="background-color: rgb(61, 209, 61);color: white;">0</td>
+                        <td id="aa364">0</td>
+                        <td id="aa365" style="background-color: red;color: white;">0</td>
+                    </tr>
+
+                    <tr>
+                        <td id="aa371">0</td>
+                        <td id="aa372">0</td>
+                        <td id="aa373" style="background-color: rgb(61, 209, 61);color: white;">0</td>
+                        <td id="aa374">0</td>
+                        <td id="aa375" style="background-color: red;color: white;">0</td>
+                    </tr>
+
+
+                </tbody>
+            </table>
+        </div>
+        <footer id="main-footer">
+            <p>Copyright &copy; 2020, Ask Me, All Rights Reserved</p>
+        </footer>
+
+        <script src="apps.js">
+        </script>
+        <script src="app2.js"></script>
+        <script src="app3.js"></script>
+        <script src="app4.js"></script>
+</body>
+
+</html>
