@@ -6,7 +6,8 @@
 }
 
 .active {
-    text-decoration: underline;
+    background-color: white;
+    border-radius: 5px;
 }
 
 .logo {
@@ -62,7 +63,7 @@ body {
 
 .navbar ul li a {
     color: #10f9c4;
-    padding: 0.75rem;
+    padding: 0.5rem;
     margin: 0 0.25rem;
     text-decoration: none;
     font-weight: bold;
@@ -219,6 +220,10 @@ footer {
     padding: 10px 40px 15px 40px;
     background-color: #10f9c4;
     color: black;
+    position: relative;
+    left: 0;
+    bottom: 0;
+    width: 100%;
 }
 
 
