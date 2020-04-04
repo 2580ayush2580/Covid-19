@@ -43,6 +43,8 @@ body {
 
 #importantlinks a:hover {
     background-color: #10f9c4;
+    color: black;
+    border-radius: 5px;
 }
 
 .navbar {
