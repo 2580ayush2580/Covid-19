@@ -453,6 +453,12 @@ footer {
     }
 }
 
+@media(min-width:1441px) {
+    table {
+        margin: auto;
+    }
+}
+
 
 /* 
 @media only screen and (max-width:426px) {
